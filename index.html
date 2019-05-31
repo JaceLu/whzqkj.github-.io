@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="css/revolution-slider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/zq.css" type="text/css" />
     <!--[if IE]>
     <script src="js/html5.js"></script>
@@ -39,32 +39,43 @@
                     <li><a href="#solution">解决方案</a></li>
                     <li><a href="#process">服务流程</a></li>
                     <li><a href="#join">加入我们</a></li>
-                    <li><a href="#clients">客户案例</a></li>
                     <li><a href="#contact">联系我们</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- header -->
-    <div id="intro" class="swiper-container intro">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(images/banner/1.jpg);">
-                <div class="caption scroll-animation" data-animation="pulse" data-animation-delay="0s">
-                    <h1>芜湖 <span>智擎网络科技</span> 有限公司</h1>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image:url(images/banner/2.jpg);">
-                <div class="caption">
-                    <h1>为您量身定制 <span>定制开发</span></h1>
-                    <p>根据用户的实际情况进行软件开发设计，从而能更快更有效地应用软件产生效益，满足您特定使用习惯的需求</p>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image:url(images/banner/3.jpg);">
-            </div>
+    <div id="intro" class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000"
+                    data-saveperformance="on">
+                    <img src="images/banner/1.jpg" alt="slider-image" />
+
+                    <div class="tp-caption sfb title-slide box color-blue center large" data-x="200" data-y="center"
+                         data-speed="1000" data-start="1000">
+                        芜湖智擎
+                    </div>
+
+                    <div class="tp-caption sfb title-slide box center bg-color color-white large" data-x="560"
+                         data-y="center" data-speed="1000" data-start="1000">
+                        网络科技
+                    </div>
+                </li>
+                <li data-transition="slideup" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                    <img src="images/banner/5.jpg" alt="slider-image" />
+
+                    <div class="tp-caption sfl flat-box_slide" data-x="center" data-y="center" data-speed="2000"
+                         data-start="1000" data-easing="Power3.easeInOut">
+                        <div class="title-slide">软件<span>定制开发</span><br>为您量身定制 </div>
+                        <div class="desc-slide">
+                            根据用户的实际情况进行软件开发设计，<br>从而能更快更有效地应用软件产生效益，<br>满足您特定使用习惯的需求
+                        </div>
+                        <a href="#contact" class="flat-button-slide">联系我们</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <!-- Add Pagination -->
-        <a href="#" class="swiper-top-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-        <a href="#" class="swiper-top-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
     </div>
     <!-- slide -->
     <section id="services" class="services section">
@@ -237,16 +248,16 @@
     <!-- process -->
     <div id="join" class="join">
         <section class="index-image">
-            <div class="index-image__img" style="background-image:url(../page1/img/img24.jpg)"></div>
+            <div class="index-image__img" style="background-image:url(../page1/images/img2.jpg)"></div>
             <div class="index-image__info">
-                <h3>为什么选择我们</h3>
+                <h3>选择我们</h3>
                 <p>我们拥有一支强大的、有凝聚力的企业信息化支撑团队，核心成员从业经验均具有多年企业信息化项目的从业背景，过硬的技术支持为企业项目研发提供无穷的能量！随需应变、顾客至上，为不同企业量体裁衣，实实在在的提高企业生产经营管理效益，为客户创造更大的价值——这是我们对客户服务的宗旨。在这里，我们提供的不仅仅是为您量身定制的产品和方案，更是给您带来站在科技前沿的企业文化内涵和企业价值的提升。</p>
             </div>
         </section>
         <section class="index-image index-image_right">
-            <div class="index-image__img" style="background-image:url(../page1/img/img23.jpg)"></div>
+            <div class="index-image__img" style="background-image:url(../page1/images/img1.jpg)"></div>
             <div class="index-image__info">
-                <h3>等待你的加入</h3>
+                <h3>加入我们</h3>
                 <p>
                     1、有开发经验，并不断要求自己更专业
                     2、遇到问题直接沟通，有结论后高效执行，过程中充分同步、协作
@@ -254,65 +265,20 @@
             </div>
         </section>
     </div>
-    <div id="clients" class="scroll-animation clients" data-animation="fadeInUp" data-animation-delay="0s">
-        <div class="container">
-            <div class="carousel-wrapper">
-                <div class="swiper-container" id="carousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/partner1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner4.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner5.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner4.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/partner5.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- clients -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="contact__inner">
-                <h2 class="heading">联系我们</h2>
-                <div class="row">
-                    <div class="col-xs-6 col-md-3 text-center">
-                        <div class="contact__item">
-                            <div class="contact__icon">
-                                <icon class="fa fa-qq"></icon>
-                            </div>
-                            <p class="contact__name">线上咨询</p><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=8173512" class="hover-brackets" target="_blank">QQ交谈</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 text-center">
-                        <div class="contact__item">
-                            <div class="contact__icon">
-                                <icon class="fa fa-envelope"></icon>
-                            </div>
-                            <p class="contact__name">邮件咨询</p><a href="mailto:8173512@qq.com" class="hover-brackets" target="_blank">8173512@qq.com</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 text-center">
-                        <div class="contact__item">
-                            <div class="contact__icon">
-                                <icon class="fa fa-phone"></icon>
-                            </div>
-                            <p class="contact__name">电话沟通</p><span class="muted"><a href="tel:13855351228" class="hover-brackets" target="_blank">13855351228</a></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 text-center">
-                        <div class="contact__item session">
-                            <div class="contact__icon">
-                                <icon class="fa fa-map"></icon>
-                            </div>
-                            <p class="contact__name">拜访我们</p><a href="http://map.baidu.com/?newmap=1&amp;ie=utf-8&amp;s=s%26wd%3D%E5%AE%89%E5%BE%BD%E8%8A%9C%E6%B9%96%E5%B8%82%E9%93%B6%E6%B9%96%E5%8C%97%E8%B7%AF38%E5%8F%B7" class="hover-brackets" target="_blank">点击查看地址</a>
-                        </div>
+                <div class="contact__item">
+                    <div class="contact__info">
+                        <h2 class="heading">联系我们</h2>
+                        <p><icon class="fa fa-phone text_red"></icon><a href="tel:13855351228" target="_blank">13855351228</a></p>
+                        <p><icon class="fa fa-qq text_blue"></icon><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=8173512" target="_blank">QQ交谈</a></p>
+                        <p><icon class="fa fa-envelope text_green"></icon><a href="mailto:8173512@qq.com" target="_blank">8173512@qq.com</a></p>
+                        <p><icon class="fa fa-map text_orange"></icon>安徽芜湖市银湖北路38号科创中心C栋软件园</p>
                     </div>
                 </div>
+                <a class="contact__item contact__map" href="http://map.baidu.com/?newmap=1&amp;ie=utf-8&amp;s=s%26wd%3D%E5%AE%89%E5%BE%BD%E8%8A%9C%E6%B9%96%E5%B8%82%E9%93%B6%E6%B9%96%E5%8C%97%E8%B7%AF38%E5%8F%B7" style="background-image:url(../page1/images/map.jpg)" target="_blank">
+                </a>
             </div>
         </div>
     </section>
@@ -327,12 +293,10 @@
     </footer>
     <!-- footer -->
     <!-- scripts -->
-    <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/bootstrap.min.js"></script>
-    <script src="js/lib/lightbox.min.js"></script>
-    <script src="js/lib/shuffle.js"></script>
-    <script src="js/lib/swiper.min.js"></script>
-    <script src="js/lib/waypoints.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>
