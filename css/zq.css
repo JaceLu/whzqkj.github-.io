@@ -21,7 +21,7 @@
     text-align: center;
     border-radius: 50%;
     font-size: 40px;
-    background: #4778bd;
+    background: #dd4434;
     color: #fff;
 }
 /*logo*/
@@ -387,14 +387,14 @@
     }
 
     .process p {
-        font-size: 14px;
+        font-size: 16px;
         color: #666;
         line-height: 1.5;
     }
 
 .process__title {
     margin: 40px 0 20px;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.5;
     color: #4778bd;
 }
